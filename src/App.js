@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Application for AWS Amplify | Ajay Ghosh AG
+          Application for AWS Amplify | Azure | SESA475978
         </p>
         <a
           className="App-link"
