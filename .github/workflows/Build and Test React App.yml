@@ -14,7 +14,10 @@ jobs:
       - name: Azure Login
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_APP_ID }} # Azure AD Application ID
-          password: ${{ secrets.AZURE_APP_SECRET }} # Azure AD Application Secret
-          tenant: ${{ secrets.AZURE_TENANT_ID }} # Azure AD Tenant ID
+          creds: |
+            {
+              "clientId": "${{ secrets.AZURE_APP_ID }}",
+              "clientSecret": "${{ secrets.AZURE_APP_SECRET }}",
+              "tenantId": "${{ secrets.AZURE_TENANT_ID }}"
+            }
           
