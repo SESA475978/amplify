@@ -42,4 +42,4 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: demoag
-          publish-profile: demoag - Web Deploy
+          publish-profile: demoag.scm.azurewebsites.net:443
